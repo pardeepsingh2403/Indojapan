@@ -5,7 +5,9 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const ENQUIRIES_FILE = path.join(__dirname, '..', 'data', 'enquiries.json');
+const ENQUIRIES_FILE = process.env.VERCEL
+  ? path.join('/tmp', 'enquiries.json')
+  : path.join(__dirname, '..', 'data', 'enquiries.json');
 
 const router = express.Router();
 
