@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-red: #dc2626;
+    --brand-red-dark: #b91c1c;
+    --brand-red-light: #fef2f2;
+    --charcoal-dark: #0f172a;
+    --charcoal-text: #1e293b;
+    --charcoal-muted: #475569;
+    --bg-page: #fafbfc;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: var(--charcoal-text);
+    background-color: var(--bg-page);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    color: #1e293b;
+    background-color: #fafbfc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom subtle Japanese pattern accents */
+.jp-subtle-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+.jp-dots-pattern {
+  background-image: radial-gradient(rgba(220, 38, 38, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
