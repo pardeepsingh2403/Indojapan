@@ -4,7 +4,6 @@ import {
   Award, 
   CheckCircle2, 
   MapPin, 
-  Calendar, 
   Phone, 
   ShieldCheck, 
   Building2, 
@@ -30,8 +29,8 @@ export const SuccessGallery = () => {
   return (
     <div className="bg-[#fafbfc] text-slate-800">
       <SEOHead 
-        title="Student Visas & Campus Gallery | Indo Japan Language School | Jalandhar, Punjab"
-        description="View real student visa grants, Certificate of Eligibility (COE) approvals, Japanese language classroom sessions in Jalandhar, and student life in Japan."
+        title="Gallery | IndoJapan Japanese Language School | Jalandhar"
+        description="View real student visa grants, Certificate of Eligibility (COE) approvals, Japanese language classroom sessions in Jalandhar, and student life in Japan at IndoJapan Japanese Language School."
       />
 
       {/* Header Banner */}
@@ -40,7 +39,7 @@ export const SuccessGallery = () => {
           <div className="max-w-3xl space-y-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 text-red-700 text-xs font-semibold border border-red-200">
               <Award className="w-3.5 h-3.5" />
-              <span>Proven Student Success • Jalandhar to Japan</span>
+              <span>{contactInfo.headOffice} • Founder: {contactInfo.founder}</span>
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
               Student Visas, COE Grants & Campus Gallery
@@ -275,16 +274,24 @@ export const SuccessGallery = () => {
               Want to Be in Our Next Visa Success Gallery?
             </h3>
             <p className="text-xs sm:text-sm text-slate-300">
-              Start your Japanese language classes and Japan visa processing at Indo Japan Language School in Jalandhar.
+              Start your Japanese language classes and Japan visa processing at {contactInfo.name} ({contactInfo.headOffice}). Founder: {contactInfo.founder}.
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3">
             <a
-              href={`tel:${contactInfo.phone.replace(/\s+/g, '')}`}
+              href={`tel:${contactInfo.indiaPhone}`}
               className="px-6 py-3 rounded-xl bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-semibold flex items-center gap-2"
             >
               <Phone className="w-4 h-4" />
-              <span>Call: {contactInfo.phoneDisplay}</span>
+              <span>Call: {contactInfo.indiaPhone}</span>
+            </a>
+            <a
+              href={contactInfo.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs sm:text-sm font-semibold"
+            >
+              WhatsApp Us
             </a>
             <Link
               to="/contact"

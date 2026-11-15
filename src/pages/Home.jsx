@@ -8,18 +8,15 @@ import {
   CheckCircle2, 
   ArrowRight, 
   Phone, 
-  Mail, 
   MapPin, 
   ShieldCheck, 
   Clock, 
   Compass, 
-  Users, 
   Award, 
   Building2, 
   Briefcase, 
   Train, 
   Home as HomeIcon,
-  HelpCircle,
   AlertCircle,
   Sparkles
 } from 'lucide-react';
@@ -30,8 +27,8 @@ export const Home = () => {
   return (
     <div className="bg-[#fafbfc] text-slate-800">
       <SEOHead 
-        title="Indo Japan Language School | Japanese Language & Japan Study Visa Guidance | Jalandhar, Punjab"
-        description="Learn Japanese (JLPT N5 to N1) and receive authentic guidance for Japanese language school admission and student visa (COE) processing in Jalandhar, Punjab."
+        title="IndoJapan Japanese Language School | Jalandhar Punjab Head Office | www.indojapanjalandhar.com"
+        description="Learn Japanese (JLPT N5 to N1) and receive authentic guidance for Japanese language school admission and student visa (COE) processing at IndoJapan Japanese Language School in Jalandhar, Punjab. Founder: NAVDEEP SINGH VIRK."
       />
 
       {/* ======================================================== */}
@@ -50,35 +47,35 @@ export const Home = () => {
               {/* Region & Mission Badge */}
               <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200/80 text-[11px] sm:text-xs font-semibold text-red-700 max-w-full">
                 <span className="w-2 h-2 rounded-full bg-red-600 shrink-0"></span>
-                <span className="truncate sm:whitespace-normal">Japanese Language Institute & Study Visa Guidance • Jalandhar</span>
+                <span className="truncate sm:whitespace-normal">{contactInfo.headOffice} • Founder: {contactInfo.founder}</span>
               </div>
 
               {/* Exact Suggested Headline */}
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-extrabold text-slate-900 tracking-tight leading-[1.18]">
-                Your Journey to Japan Starts Here
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-extrabold text-slate-900 tracking-tight leading-[1.18]">
+                IndoJapan <span className="text-red-600">Japanese Language School</span>
               </h1>
 
               {/* Exact Supporting Text */}
               <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
-                Learn Japanese, explore study opportunities in Japan and get professional guidance throughout your Japanese language school admission and student visa journey.
+                Master Japanese language (<strong className="text-slate-800">JLPT N5 to N1</strong>), apply to top accredited Japanese language institutes, and secure your Japan student visa with verified, transparent guidance from Founder <strong className="text-slate-900">{contactInfo.founder}</strong>.
               </p>
 
               {/* Action Buttons */}
               <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
                 <Link
-                  to="/study-in-japan"
+                  to="/admission/how-to-apply"
                   className="px-7 py-3.5 rounded-xl text-sm font-semibold text-white bg-red-600 hover:bg-red-700 shadow-sm hover:shadow transition-all flex items-center justify-center gap-2 group"
                 >
-                  <span>Explore Study in Japan</span>
+                  <span>Admission & How to Apply</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
 
                 <Link
-                  to="/contact"
+                  to="/courses"
                   className="px-7 py-3.5 rounded-xl text-sm font-semibold text-slate-800 bg-white hover:bg-slate-50 border border-slate-300 shadow-sm transition-all flex items-center justify-center gap-2"
                 >
-                  <Phone className="w-4 h-4 text-red-600" />
-                  <span>Contact Us</span>
+                  <BookOpen className="w-4 h-4 text-red-600" />
+                  <span>View Courses</span>
                 </Link>
               </div>
 
@@ -135,7 +132,7 @@ export const Home = () => {
       </section>
 
       {/* ======================================================== */}
-      {/* SECTION 2: ABOUT INDO JAPAN LANGUAGE SCHOOL */}
+      {/* SECTION 2: ABOUT INDOJAPAN JAPANESE LANGUAGE SCHOOL */}
       {/* ======================================================== */}
       <section className="py-16 lg:py-20 bg-white border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -151,8 +148,8 @@ export const Home = () => {
                   loading="lazy"
                 />
                 <div className="p-4 bg-slate-50 border-t border-slate-200 text-xs text-slate-600">
-                  <strong className="text-slate-900 font-semibold block">Focused Classroom Guidance in Jalandhar</strong>
-                  Structured Japanese language learning with comprehensive reading, writing, and conversational drills.
+                  <strong className="text-slate-900 font-semibold block">{contactInfo.name}</strong>
+                  {contactInfo.headOffice} • Founder: {contactInfo.founder}
                 </div>
               </div>
             </div>
@@ -171,7 +168,7 @@ export const Home = () => {
 
               <div className="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
                 <p>
-                  <strong>Indo Japan Language School</strong> is an educational institute established in Jalandhar, Punjab, dedicated to providing authentic Japanese language education and comprehensive guidance for students aspiring to study in Japan.
+                  <strong>{contactInfo.name}</strong> is an educational institute established in {contactInfo.headOffice}, founded by <strong>{contactInfo.founder}</strong> to provide authentic Japanese language education and comprehensive guidance for students aspiring to study and work in Japan.
                 </p>
                 <p>
                   We understand that studying abroad is a significant academic and life decision. Our objective is to guide students with factual, transparent information regarding Japanese language learning milestones (JLPT N5 to N1), Japanese language school admissions, Certificate of Eligibility (COE) procedures, and student visa application standards.
@@ -637,7 +634,7 @@ export const Home = () => {
                 Immigration regulations, documentary requirements, and processing fees are subject to revision by Japanese authorities. Applicants must ensure all submitted documents (financial, educational, and personal) are genuine, accurate, and independently verifiable.
               </p>
               <p className="font-medium text-slate-800">
-                Indo Japan Language School does not promise or guarantee Certificate of Eligibility (COE) or visa approval. We assist with factual information and administrative preparation.
+                IndoJapan Japanese Language School does not promise or guarantee Certificate of Eligibility (COE) or visa approval. We assist with factual information and administrative preparation.
               </p>
             </div>
           </div>
@@ -947,7 +944,7 @@ export const Home = () => {
       </section>
 
       {/* ======================================================== */}
-      {/* SECTION 9: WHY CHOOSE INDO JAPAN LANGUAGE SCHOOL */}
+      {/* SECTION 9: WHY CHOOSE INDOJAPAN JAPANESE LANGUAGE SCHOOL */}
       {/* ======================================================== */}
       <section className="py-16 lg:py-22 bg-[#fafbfc] border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -958,7 +955,7 @@ export const Home = () => {
             </span>
             {/* Exact Suggested Heading */}
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight">
-              Why Choose Indo Japan Language School?
+              Why Choose IndoJapan Japanese Language School?
             </h2>
             <p className="text-sm sm:text-base text-slate-600">
               We uphold educational clarity and honest advisory for students in Jalandhar and across Punjab.
@@ -1037,8 +1034,9 @@ export const Home = () => {
 
             <div className="relative max-w-3xl space-y-6">
               
+              {/* Direct Contact Channel Badge */}
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-600/30 text-red-300 text-xs font-semibold border border-red-500/40">
-                <span>Direct Contact Channel • Jalandhar Office</span>
+                <span>{contactInfo.headOffice} • Founder: {contactInfo.founder}</span>
               </div>
 
               {/* Exact Suggested Heading */}
@@ -1048,43 +1046,43 @@ export const Home = () => {
 
               {/* Exact Supporting Text */}
               <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-                Have questions about learning Japanese or studying in Japan? Contact Indo Japan Language School for information and guidance.
+                Have questions about learning Japanese or studying in Japan? Contact {contactInfo.name} for verified information and guidance.
               </p>
 
               {/* Clean Contact Cards with Clickable tel: and mailto: */}
               <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 
-                {/* Clickable Phone Number */}
+                {/* Clickable India Phone Number */}
                 <a
-                  href={`tel:${contactInfo.phone.replace(/\s+/g, '')}`}
+                  href={`tel:${contactInfo.indiaPhone}`}
                   className="p-5 rounded-2xl bg-slate-800/90 border border-slate-700/80 hover:border-red-500/60 transition-all group flex items-start gap-4"
                 >
                   <div className="w-12 h-12 rounded-xl bg-red-600/20 text-red-400 flex items-center justify-center shrink-0 group-hover:bg-red-600 group-hover:text-white transition-colors">
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <span className="text-xs text-slate-400 block uppercase font-medium">Telephone / WhatsApp</span>
+                    <span className="text-xs text-slate-400 block uppercase font-medium">India Contact Number</span>
                     <strong className="text-lg text-white font-semibold group-hover:text-red-400 transition-colors">
-                      {contactInfo.phoneDisplay}
+                      {contactInfo.indiaPhone}
                     </strong>
-                    <span className="text-[11px] text-slate-400 block mt-0.5">Click to call directly</span>
+                    <span className="text-[11px] text-slate-400 block mt-0.5">Click to call Jalandhar office</span>
                   </div>
                 </a>
 
-                {/* Clickable Email Address */}
+                {/* Clickable Japan Phone Number */}
                 <a
-                  href={`mailto:${contactInfo.email}`}
-                  className="p-5 rounded-2xl bg-slate-800/90 border border-slate-700/80 hover:border-red-500/60 transition-all group flex items-start gap-4"
+                  href={`tel:${contactInfo.japanPhone.replace(/[\s+]/g, '')}`}
+                  className="p-5 rounded-2xl bg-slate-800/90 border border-slate-700/80 hover:border-sky-500/60 transition-all group flex items-start gap-4"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                    <Mail className="w-6 h-6" />
+                  <div className="w-12 h-12 rounded-xl bg-sky-600/20 text-sky-400 flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">
+                    <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <span className="text-xs text-slate-400 block uppercase font-medium">Official Inquiry Email</span>
-                    <span className="text-sm sm:text-base text-white font-medium break-all group-hover:text-blue-300 transition-colors">
-                      {contactInfo.email}
-                    </span>
-                    <span className="text-[11px] text-slate-400 block mt-0.5">Click to compose email</span>
+                    <span className="text-xs text-slate-400 block uppercase font-medium">Japan Contact Number</span>
+                    <strong className="text-lg text-white font-semibold group-hover:text-sky-400 transition-colors">
+                      {contactInfo.japanPhone}
+                    </strong>
+                    <span className="text-[11px] text-slate-400 block mt-0.5">Japan Liaison Desk</span>
                   </div>
                 </a>
 

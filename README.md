@@ -1,16 +1,46 @@
-# React + Vite
+# IndoJapan Japanese Language School (Frontend Website)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Official modern frontend web application for **IndoJapan Japanese Language School**, Jalandhar, Punjab, India.
 
-Currently, two official plugins are available:
+- **Founder & Director:** NAVDEEP SINGH VIRK
+- **India Contact:** +91 94780 66275
+- **Japan Contact:** +81 80 3932 1993
+- **Official Domain:** [www.indojapanjalandhar.com](https://www.indojapanjalandhar.com)
+- **Head Office:** SCO 14, 2nd Floor, Civil Lines, Near BMC Chowk, Jalandhar, Punjab – 144001, India
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ⚡ Tech Stack & Architecture
+- **Framework:** React 19 + Vite 8 (Pure Frontend Single Page Application)
+- **Styling:** Tailwind CSS v4
+- **Routing:** React Router v7 (Client-Side Routing)
+- **Icons:** Lucide React + Custom Brand SVG Social Icons
+- **Deployment Target:** Vercel (Frontend Static SPA / Zero-Config)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🚀 Local Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+# Install dependencies
+npm install
+
+# Start local development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build locally
+npm run preview
+```
+
+---
+
+## 🌐 Deploy to Vercel
+This project is 100% frontend only with zero backend dependencies:
+1. Connect this repository to **Vercel**.
+2. Framework Preset: **Vite**
+3. Build Command: `npm run build`
+4. Output Directory: `dist`
+5. Deploy!

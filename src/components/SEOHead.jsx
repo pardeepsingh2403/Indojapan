@@ -13,7 +13,7 @@ export const SEOHead = ({ title, description, canonical }) => {
     // Update Meta Description
     let metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', description || 'Indo Japan Language School in Jalandhar, Punjab provides Japanese language training and Japan study visa guidance.');
+      metaDescription.setAttribute('content', description || 'IndoJapan Japanese Language School in Jalandhar, Punjab provides Japanese language training and Japan study visa guidance.');
     } else {
       metaDescription = document.createElement('meta');
       metaDescription.name = 'description';
@@ -23,7 +23,7 @@ export const SEOHead = ({ title, description, canonical }) => {
 
     // Update Canonical URL
     let linkCanonical = document.querySelector('link[rel="canonical"]');
-    const currentUrl = canonical || `https://indojapanlanguageschool.com${location.pathname}`;
+    const currentUrl = canonical || `https://www.indojapanjalandhar.com${location.pathname}`;
     if (linkCanonical) {
       linkCanonical.setAttribute('href', currentUrl);
     } else {
