@@ -24,35 +24,35 @@ export const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white/98 backdrop-blur-md border-b border-slate-200 shadow-2xs transition-all w-full">
-      <nav className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <nav className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
-          {/* 1. Logo / Brand */}
-          <Link to="/" className="flex items-center gap-2 sm:gap-3 shrink min-w-0 mr-1 sm:mr-8 xl:mr-12 group">
+          {/* 1. Logo / Brand (shrink-0 guarantees it NEVER gets crushed or overlapped) */}
+          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 shrink-0 mr-3 lg:mr-6 xl:mr-10 group">
             <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-50 border border-slate-200 shadow-2xs flex items-center justify-center group-hover:border-red-500 group-hover:bg-red-50/40 transition-all shrink-0">
               <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-red-600 flex items-center justify-center text-white text-[10px] sm:text-xs font-black shadow-xs">
                 日
               </div>
             </div>
 
-            <div className="flex flex-col min-w-0">
-              <span className="text-[15px] sm:text-lg lg:text-xl font-black tracking-tight text-slate-900 group-hover:text-red-600 transition-colors whitespace-nowrap">
+            <div className="flex flex-col">
+              <span className="text-[15px] sm:text-lg lg:text-[17px] xl:text-xl font-black tracking-tight text-slate-900 group-hover:text-red-600 transition-colors whitespace-nowrap">
                 Indo Japan <span className="text-red-600">Language School</span>
               </span>
-              <span className="text-[10px] sm:text-[11px] font-semibold text-slate-500 tracking-wide truncate">
+              <span className="text-[10px] sm:text-[11px] font-semibold text-slate-500 tracking-wide whitespace-nowrap">
                 <span className="sm:hidden">Jalandhar, Punjab</span>
                 <span className="hidden sm:inline">Jalandhar, Punjab • Japanese Education & Visa</span>
               </span>
             </div>
           </Link>
 
-          {/* 2. Desktop Navigation Links (Proper spacing & bold styling) */}
-          <div className="hidden lg:flex items-center gap-4 xl:gap-7 text-[14px] xl:text-[15px] font-bold text-slate-800 shrink-0">
+          {/* 2. Desktop Navigation Links (Properly proportional for 1024px laptops and 1440px desktops) */}
+          <div className="hidden lg:flex items-center gap-2 xl:gap-5 2xl:gap-6 text-[13px] xl:text-[14.5px] 2xl:text-[15px] font-bold text-slate-800 shrink-0">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-1 py-1.5 transition-colors whitespace-nowrap relative ${
+                className={`px-1.5 xl:px-2 py-1.5 transition-colors whitespace-nowrap relative ${
                   isActive(link.path)
                     ? 'text-red-600 font-black'
                     : 'text-slate-800 hover:text-red-600'
@@ -66,13 +66,13 @@ export const Navbar = () => {
             ))}
           </div>
 
-          {/* 3. Right Action: Bold Red Contact Button (Guaranteed left margin) */}
-          <div className="hidden lg:flex items-center shrink-0 ml-6 xl:ml-8">
+          {/* 3. Right Action: Bold Red Contact Button */}
+          <div className="hidden lg:flex items-center shrink-0 ml-3 xl:ml-6">
             <Link
               to="/contact"
-              className="px-5 py-2.5 xl:px-6 xl:py-3 rounded-xl text-sm font-black text-white bg-red-600 hover:bg-red-700 shadow-sm hover:shadow-md transition-all whitespace-nowrap flex items-center gap-2 group cursor-pointer"
+              className="px-3.5 py-2 xl:px-5 xl:py-2.5 rounded-xl text-xs xl:text-sm font-black text-white bg-red-600 hover:bg-red-700 shadow-sm hover:shadow-md transition-all whitespace-nowrap flex items-center gap-1.5 xl:gap-2 group cursor-pointer"
             >
-              <Phone className="w-4 h-4 text-white group-hover:rotate-12 transition-transform" />
+              <Phone className="w-3.5 h-3.5 xl:w-4 xl:h-4 text-white group-hover:rotate-12 transition-transform" />
               <span>Contact Us</span>
             </Link>
           </div>
