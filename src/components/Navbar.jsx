@@ -23,24 +23,25 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/98 backdrop-blur-md border-b border-slate-200 shadow-2xs transition-all">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 bg-white/98 backdrop-blur-md border-b border-slate-200 shadow-2xs transition-all w-full">
+      <nav className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
-          {/* 1. Logo / Brand (Guaranteed right margin so Home NEVER touches the logo) */}
-          <Link to="/" className="flex items-center gap-3 shrink-0 mr-6 sm:mr-8 xl:mr-12 group">
-            <div className="w-10 h-10 rounded-xl bg-slate-50 border border-slate-200 shadow-2xs flex items-center justify-center group-hover:border-red-500 group-hover:bg-red-50/40 transition-all shrink-0">
-              <div className="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-white text-xs font-black shadow-xs">
+          {/* 1. Logo / Brand */}
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 shrink min-w-0 mr-1 sm:mr-8 xl:mr-12 group">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-50 border border-slate-200 shadow-2xs flex items-center justify-center group-hover:border-red-500 group-hover:bg-red-50/40 transition-all shrink-0">
+              <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-red-600 flex items-center justify-center text-white text-[10px] sm:text-xs font-black shadow-xs">
                 日
               </div>
             </div>
 
-            <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-black tracking-tight text-slate-900 group-hover:text-red-600 transition-colors whitespace-nowrap">
+            <div className="flex flex-col min-w-0">
+              <span className="text-[15px] sm:text-lg lg:text-xl font-black tracking-tight text-slate-900 group-hover:text-red-600 transition-colors whitespace-nowrap">
                 Indo Japan <span className="text-red-600">Language School</span>
               </span>
-              <span className="text-[11px] font-semibold text-slate-500 tracking-wide whitespace-nowrap">
-                Jalandhar, Punjab • Japanese Education & Visa
+              <span className="text-[10px] sm:text-[11px] font-semibold text-slate-500 tracking-wide truncate">
+                <span className="sm:hidden">Jalandhar, Punjab</span>
+                <span className="hidden sm:inline">Jalandhar, Punjab • Japanese Education & Visa</span>
               </span>
             </div>
           </Link>
@@ -77,10 +78,10 @@ export const Navbar = () => {
           </div>
 
           {/* Mobile / Tablet Menu & Call Toggle */}
-          <div className="lg:hidden flex items-center gap-2">
+          <div className="lg:hidden flex items-center gap-1.5 sm:gap-2 shrink-0">
             <a
               href={`tel:${contactInfo.phone.replace(/\s+/g, '')}`}
-              className="p-2.5 rounded-xl bg-red-50 text-red-600 border border-red-200 flex items-center gap-1.5 text-xs font-bold whitespace-nowrap"
+              className="p-2 sm:p-2.5 rounded-xl bg-red-50 text-red-600 border border-red-200 flex items-center gap-1 text-xs font-bold shrink-0"
               title="Call Indo Japan Language School"
             >
               <Phone className="w-4 h-4" />
@@ -89,10 +90,10 @@ export const Navbar = () => {
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2.5 rounded-xl text-slate-800 hover:bg-slate-100 transition-colors border border-slate-200"
+              className="p-2 sm:p-2.5 rounded-xl text-slate-800 hover:bg-slate-100 transition-colors border border-slate-200 shrink-0"
               aria-label="Toggle navigation menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
             </button>
           </div>
 

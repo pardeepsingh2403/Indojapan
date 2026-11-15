@@ -13,9 +13,9 @@ import { Contact } from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col bg-[#fafbfc] text-slate-800 antialiased selection:bg-red-600 selection:text-white">
+      <div className="min-h-screen w-full max-w-full overflow-x-hidden flex flex-col bg-[#fafbfc] text-slate-800 antialiased selection:bg-red-600 selection:text-white">
         <Navbar />
-        <main className="flex-1">
+        <main className="flex-1 w-full max-w-full overflow-x-hidden">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

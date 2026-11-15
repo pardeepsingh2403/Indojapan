@@ -48,9 +48,9 @@ export const Home = () => {
             <div className="lg:col-span-7 space-y-6 text-left">
               
               {/* Region & Mission Badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200/80 text-xs font-semibold text-red-700">
-                <span className="w-2 h-2 rounded-full bg-red-600"></span>
-                <span>Japanese Language Institute & Study Visa Guidance • Jalandhar</span>
+              <div className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-full bg-red-50 border border-red-200/80 text-[11px] sm:text-xs font-semibold text-red-700 max-w-full">
+                <span className="w-2 h-2 rounded-full bg-red-600 shrink-0"></span>
+                <span className="truncate sm:whitespace-normal">Japanese Language Institute & Study Visa Guidance • Jalandhar</span>
               </div>
 
               {/* Exact Suggested Headline */}
@@ -104,7 +104,7 @@ export const Home = () => {
             <div className="lg:col-span-5">
               <div className="relative">
                 {/* Decorative border frame */}
-                <div className="absolute -inset-2 bg-gradient-to-tr from-red-100 to-slate-100 rounded-3xl transform rotate-1 pointer-events-none"></div>
+                <div className="hidden sm:block absolute -inset-2 bg-gradient-to-tr from-red-100 to-slate-100 rounded-3xl transform rotate-1 pointer-events-none"></div>
                 
                 {/* Image Container */}
                 <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100">
