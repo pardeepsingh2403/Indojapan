@@ -2,8 +2,8 @@ export const contactInfo = {
   name: "IndoJapan Japanese Language School",
   tagline: "Japanese Language Education & Japan Study Visa Guidance",
   japaneseName: "インド日本学園",
-  founder: "NAVDEEP SINGH VIRK",
-  founderTitle: "Founder & Director",
+  founder: "NAVDEEP VIRK",
+  founderTitle: "Founder & CEO",
   headOffice: "Jalandhar Punjab India Head Office",
   domain: "www.indojapanjalandhar.com",
   website: "https://www.indojapanjalandhar.com",
@@ -13,31 +13,53 @@ export const contactInfo = {
   indiaPhoneDisplay: "+91 94780 66275",
   japanPhone: "+81 80 3932 1993",
   japanPhoneDisplay: "+81 80 3932 1993",
+  japanWhatsapp: "https://wa.me/818039321993?text=Hello%20IndoJapan%20Japanese%20Language%20School,%20I%20would%20like%20to%20connect%20with%20your%20Japan%20office.",
   landline: "+91 181 2456789",
   landlineDisplay: "0181-2456789",
   email: "info@indojapanjalandhar.com",
   admissionsEmail: "admissions@indojapanjalandhar.com",
   address: {
-    line1: "SCO 14, 2nd Floor, Civil Lines",
-    line2: "Near BMC Chowk, Opposite District Courts",
+    line1: "BMC CHOWK, Near Bus Stand",
+    line2: "Jalandhar, Punjab",
     city: "Jalandhar",
     state: "Punjab",
     pincode: "144001",
     country: "India",
-    full: "SCO 14, 2nd Floor, Civil Lines, Near BMC Chowk, Jalandhar, Punjab – 144001, India (Head Office)"
+    full: "BMC CHOWK, Near Bus Stand, Jalandhar, Punjab – 144001"
+  },
+  japanOffice: {
+    title: "福岡営業所 (Fukuoka Office)",
+    japaneseTitle: "福岡営業所",
+    postalCode: "〒812-0027",
+    address: "福岡市博多区下川端町10-6 THE J・Plusビル 5階B号室",
+    full: "福岡営業所: 〒812-0027 福岡市博多区下川端町10-6 THE J・Plusビル 5階B号室",
+    building: "THE J・Plusビル 5階B号室",
+    city: "福岡市博多区",
+    area: "下川端町10-6",
+    country: "Japan",
+    phone: "+81 80 3932 1993",
+    phoneDisplay: "+81 80 3932 1993",
+    whatsapp: "https://wa.me/818039321993?text=Hello%20IndoJapan%20Japanese%20Language%20School,%20I%20would%20like%20to%20connect%20with%20your%20Fukuoka%20Japan%20office."
   },
   operatingHours: {
-    weekdays: "Monday – Friday: 9:00 AM to 6:00 PM",
-    saturday: "Saturday: 9:30 AM to 3:00 PM",
-    sunday: "Sunday: Closed"
+    weekdays: "Monday – Saturday: 9:00 AM to 6:00 PM",
+    saturday: "Saturday: 9:00 AM to 6:00 PM",
+    sunday: "Sunday: Off / Closed"
+  },
+  batchSchedules: {
+    morning: "10:00 AM – 12:00 PM",
+    afternoon: "1:00 PM – 3:00 PM",
+    days: "Monday to Saturday (Mon – Sat Classes)",
+    sunday: "Sunday Off",
+    modes: "Offline and Online Classes"
   },
   whatsapp: "https://wa.me/919478066275?text=Hello%20IndoJapan%20Japanese%20Language%20School,%20I%20would%20like%20to%20inquire%20about%20admissions%20and%20courses.",
   whatsappNumber: "+91 94780 66275",
-  mapsUrl: "https://www.google.com/maps/search/?api=1&query=IndoJapan+Japanese+Language+School+Civil+Lines+Jalandhar+Punjab",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=Indo+Japan+Japanese+Language+School+BMC+CHOWK+Near+Bus+Stand+Jalandhar+Punjab+144001",
+  instagram: "https://www.instagram.com/indo_japan_jalandhar/?hl=en",
+  instagramHandle: "@indo_japan_jalandhar",
   youtube: "https://www.youtube.com/@INDO-JAPANJALANDHAR",
   facebook: "https://www.facebook.com/share/1DahSjtuqY/",
-  instagram: "https://instagram.com/indojapanlanguageschool",
-  instagramHandle: "@indojapanlanguageschool",
   serviceAreas: "Jalandhar, Ludhiana, Amritsar, Phagwara, Hoshiarpur, Kapurthala, and across Punjab"
 };
 
@@ -258,223 +280,378 @@ export const visaMilestones = [
 ];
 
 export const galleryCategories = [
-  { id: 'all', label: 'All Photos' },
-  { id: 'visas', label: 'Student Visas & COEs' },
-  { id: 'classroom', label: 'Jalandhar Campus & Classes' },
-  { id: 'japan', label: 'Schools & Life in Japan' }
+  { id: 'all', label: 'All Approvals (25)' },
+  { id: 'visas', label: 'Japan Visa Stamped (17)' },
+  { id: 'coe', label: 'COE Approvals (8)' }
 ];
 
 export const galleryItems = [
+  // 17 Real Japan Visa Grants
   {
     id: 1,
     category: 'visas',
-    title: 'Japan Student Visa & COE Approved',
-    subtitle: 'Student from Jalandhar, Punjab',
-    destination: 'Tokyo Japanese Language Academy, Tokyo',
-    intake: 'April Intake',
+    title: 'Japan Student Visa Stamped #1',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
     tag: 'Visa Granted',
-    // Client can replace this URL with '/images/visa-1.jpg' anytime
-    image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
-    caption: 'Successful student visa grant after completing JLPT N5 language training in Jalandhar.'
+    image: '/images/visa/visa1.jpeg',
+    caption: 'Official Japan Visa stamped for our student enrolled through Indo Japan Japanese Language School, Jalandhar.'
   },
   {
     id: 2,
     category: 'visas',
-    title: 'Certificate of Eligibility (COE) Received',
-    subtitle: 'Student from Ludhiana, Punjab',
-    destination: 'Kansai Language Institute, Osaka',
-    intake: 'October Intake',
-    tag: 'COE Issued',
-    image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
-    caption: 'Official Certificate of Eligibility approved by Regional Immigration Bureau of Japan.'
+    title: 'Japan Visa Approval #2',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa2.jpeg',
+    caption: 'Student visa approval clearance after completing JLPT Japanese language coaching.'
   },
   {
     id: 3,
     category: 'visas',
-    title: 'Japan Student Visa Vignette Stamped',
-    subtitle: 'Student from Phagwara, Punjab',
-    destination: 'Kyoto Japanese Language Center, Kyoto',
-    intake: 'April Intake',
-    tag: 'Visa Stamped',
-    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80',
-    caption: 'Passport stamped with 2-year Student Visa status at Embassy of Japan / VFS.'
+    title: 'Japan Visa Approval #3',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa3.jpeg',
+    caption: 'Authentic Japan visa vignette successfully stamped on student passport.'
   },
   {
     id: 4,
-    category: 'classroom',
-    title: 'JLPT N5 Classroom Batch in Session',
-    subtitle: 'Civil Lines Center, Jalandhar',
-    destination: 'Indo Japan Language School, Jalandhar',
-    intake: 'Morning Batch',
-    tag: 'Classroom',
-    image: 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80',
-    caption: 'Students practicing Hiragana, Katakana, and sentence patterns with our Japanese language teacher.'
+    category: 'visas',
+    title: 'Japan Visa Approval #4',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa4.jpeg',
+    caption: 'Official Japanese student visa grant processed by our Jalandhar advisory center.'
   },
   {
     id: 5,
-    category: 'classroom',
-    title: 'Kanji Writing & Grammar Interactive Session',
-    subtitle: 'Civil Lines Center, Jalandhar',
-    destination: 'Indo Japan Language School, Jalandhar',
-    intake: 'Weekend Intensive Batch',
-    tag: 'Language Training',
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80',
-    caption: 'Stroke order drills and vocabulary practice preparing students for official JLPT examinations.'
+    category: 'visas',
+    title: 'Japan Visa Approval #5',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa5.jpeg',
+    caption: 'Successful Japan visa issuance for language institute study.'
   },
   {
     id: 6,
-    category: 'classroom',
-    title: 'Student Visa Counseling & Profile Assessment',
-    subtitle: 'Civil Lines Center, Jalandhar',
-    destination: 'Admissions & Advisory Desk',
-    intake: 'One-on-One Session',
-    tag: 'Counseling',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80',
-    caption: 'Transparent review of student qualifications, gap justification, and financial sponsor documents.'
+    category: 'visas',
+    title: 'Japan Visa Approval #6',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa6.jpeg',
+    caption: 'Passport stamped with Japan visa after complete document verification.'
   },
   {
     id: 7,
-    category: 'japan',
-    title: 'Student Campus Life in Tokyo',
-    subtitle: 'Tokyo, Japan',
-    destination: 'Shinjuku & Shibuya Language Hub',
-    intake: 'International Student Life',
-    tag: 'Life in Japan',
-    image: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80',
-    caption: 'Students adapting smoothly to daily Japanese transit, local culture, and language school study.'
+    category: 'visas',
+    title: 'Japan Visa Approval #7',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa7.jpeg',
+    caption: 'Japan entry visa granted to our student from Punjab.'
   },
   {
     id: 8,
-    category: 'japan',
-    title: 'Spring Orientation at Japanese University Campus',
-    subtitle: 'Osaka / Kyoto Academic Region',
-    destination: 'University Progression Track',
-    intake: 'April Academic Year',
-    tag: 'University Transition',
-    image: 'https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80',
-    caption: 'Language school graduates moving forward into Japanese higher education programs.'
+    category: 'visas',
+    title: 'Japan Visa Approval #8',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa8.jpeg',
+    caption: 'Authentic Japan visa issued by the Embassy of Japan.'
   },
   {
     id: 9,
     category: 'visas',
-    title: 'Pre-Departure Briefing & Flight Readiness',
-    subtitle: 'Student from Hoshiarpur, Punjab',
-    destination: 'Fukuoka Language Academy, Kyushu',
-    intake: 'October Intake',
-    tag: 'Departure Ready',
-    image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80',
-    caption: 'Pre-departure orientation on arrival procedures, residence card collection, and part-time permit.'
+    title: 'Japan Visa Approval #9',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa9.jpeg',
+    caption: 'Student visa approval for higher education and language school in Japan.'
+  },
+  {
+    id: 10,
+    category: 'visas',
+    title: 'Japan Visa Approval #10',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa10.jpeg',
+    caption: 'Valid Japan visa stamped on passport for our student.'
+  },
+  {
+    id: 11,
+    category: 'visas',
+    title: 'Japan Visa Approval #11',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa11.jpeg',
+    caption: 'Japan visa clearance through our BMC Chowk Jalandhar center.'
+  },
+  {
+    id: 12,
+    category: 'visas',
+    title: 'Japan Visa Approval #12',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa12.jpeg',
+    caption: 'Student visa vignette stamped after successful COE approval.'
+  },
+  {
+    id: 13,
+    category: 'visas',
+    title: 'Japan Visa Approval #13',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa13.jpeg',
+    caption: 'Official Japan student visa granted for academic enrollment.'
+  },
+  {
+    id: 14,
+    category: 'visas',
+    title: 'Japan Visa Approval #14',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa14.jpeg',
+    caption: 'Japan entry permit stamped on student passport.'
+  },
+  {
+    id: 15,
+    category: 'visas',
+    title: 'Japan Visa Approval #15',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa15.jpeg',
+    caption: 'Passport stamped with Japanese visa at VFS / Embassy.'
+  },
+  {
+    id: 16,
+    category: 'visas',
+    title: 'Japan Visa Approval #16',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa16.jpeg',
+    caption: 'Successful Japan visa issuance for students guided by Founder & CEO Navdeep Virk.'
+  },
+  {
+    id: 17,
+    category: 'visas',
+    title: 'Japan Visa Approval #17',
+    subtitle: 'Indo Japan Japanese Language School',
+    destination: 'Japan Embassy Stamped Visa',
+    tag: 'Visa Granted',
+    image: '/images/visa/visa17.jpeg',
+    caption: 'Verified stamped Japan visa for our student.'
+  },
+
+  // 8 Real Certificate of Eligibility (COE) Approvals
+  {
+    id: 18,
+    category: 'coe',
+    title: 'Certificate of Eligibility (COE) #1',
+    subtitle: 'IndoJapan Student Approval',
+    destination: 'Certificate of Eligibility (COE)',
+    tag: 'COE Issued',
+    image: '/images/coe/coe1.jpeg',
+    caption: 'Original Certificate of Eligibility (在留資格認定証明書) approved for our student.'
+  },
+  {
+    id: 19,
+    category: 'coe',
+    title: 'Certificate of Eligibility (COE) #2',
+    subtitle: 'IndoJapan Student Approval',
+    destination: 'Certificate of Eligibility (COE)',
+    tag: 'COE Issued',
+    image: '/images/coe/coe2.jpeg',
+    caption: 'Official COE approval certificate received for Indo Japan Japanese Language School student.'
+  },
+  {
+    id: 20,
+    category: 'coe',
+    title: 'Certificate of Eligibility (COE) #3',
+    subtitle: 'IndoJapan Student Approval',
+    destination: 'Certificate of Eligibility (COE)',
+    tag: 'COE Issued',
+    image: '/images/coe/coe3.jpeg',
+    caption: 'Authentic Certificate of Eligibility issued for student visa status.'
+  },
+  {
+    id: 21,
+    category: 'coe',
+    title: 'Certificate of Eligibility (COE) #4',
+    subtitle: 'IndoJapan Student Approval',
+    destination: 'Certificate of Eligibility (COE)',
+    tag: 'COE Issued',
+    image: '/images/coe/coe4.jpeg',
+    caption: 'Official COE approval for international education in Japan.'
+  },
+  {
+    id: 22,
+    category: 'coe',
+    title: 'Certificate of Eligibility (COE) #5',
+    subtitle: 'IndoJapan Student Approval',
+    destination: 'Certificate of Eligibility (COE)',
+    tag: 'COE Issued',
+    image: '/images/coe/coe5.jpeg',
+    caption: 'Official COE grant document processed through our Jalandhar Head Office.'
+  },
+  {
+    id: 23,
+    category: 'coe',
+    title: 'Certificate of Eligibility (COE) #6',
+    subtitle: 'IndoJapan Student Approval',
+    destination: 'Certificate of Eligibility (COE)',
+    tag: 'COE Issued',
+    image: '/images/coe/coe6.jpeg',
+    caption: 'Authentic Certificate of Eligibility approved for study in Japan.'
+  },
+  {
+    id: 24,
+    category: 'coe',
+    title: 'Certificate of Eligibility (COE) #7',
+    subtitle: 'IndoJapan Student Approval',
+    destination: 'Certificate of Eligibility (COE)',
+    tag: 'COE Issued',
+    image: '/images/coe/coe7.jpeg',
+    caption: 'Verified original COE approval document for our student from Punjab.'
+  },
+  {
+    id: 25,
+    category: 'coe',
+    title: 'Certificate of Eligibility (COE) #9',
+    subtitle: 'IndoJapan Student Approval',
+    destination: 'Certificate of Eligibility (COE)',
+    tag: 'COE Issued',
+    image: '/images/coe/coe9.jpeg',
+    caption: 'Authentic Certificate of Eligibility approved for study in Japan.'
   }
 ];
 
-export const blogPosts = [
+// SSW (Specified Skilled Worker) 12 Industries Data
+export const sswIndustries = [
   {
     id: 1,
-    slug: 'how-to-apply-japan-student-visa-coe-punjab',
-    title: 'Step-by-Step Guide: How to Apply for Japan Student Visa & COE from Punjab',
-    excerpt: 'Detailed roadmap for students from Jalandhar and Punjab on qualifying for Certificate of Eligibility (COE), choosing Japanese language schools, and getting visa stamped at VFS.',
-    category: 'Admissions & Visa',
-    readTime: '6 min read',
-    date: 'November 2026',
-    author: 'NAVDEEP SINGH VIRK (Founder)',
-    image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
-    tags: ['Student Visa', 'COE', 'Admissions', 'Punjab to Japan'],
-    content: `Studying in Japan has emerged as one of the most reliable and rewarding pathways for students from Punjab and North India. Unlike destinations facing sudden policy shifts and visa caps, Japan continues to actively welcome international students with clear, transparent immigration protocols.
-
-### 1. Understanding the Japan Student Visa Architecture
-The Japanese student visa process involves two distinct, mandatory milestones:
-- **Certificate of Eligibility (COE / 在留資格認定証明書):** Issued inside Japan by the Immigration Services Agency (Ministry of Justice). Your chosen Japanese language school submits the dossier on your behalf.
-- **Consular Student Visa Stamping:** Processed through VFS Global / Embassy of Japan in New Delhi after the original COE is issued.
-
-### 2. Foundational Eligibility Requirements
-- **Academic Qualifications:** Completion of minimum 12 years of formal schooling (10+2) or graduation degree from a recognized Indian board or university.
-- **Japanese Language Competence:** Proof of at least 150 hours of structured classroom training or passing certificate of JLPT N5 / NAT-TEST 5Q.
-- **Financial Sponsor:** Typically parents or blood relatives demonstrating steady income through 3 years of Income Tax Returns (ITR) and bank balance proof (~20 to 25 Lakh INR).
-
-### 3. Application Roadmap & Timeline
-Preparation should ideally begin 6 to 8 months ahead of your target intake (April or October). At IndoJapan Japanese Language School, our Jalandhar Head Office handles every stage—from profile assessment and JLPT N5 coaching to school selection, SOP drafting, COE filing, and pre-departure briefings.`
+    title: 'Nursing Care (Kaigo)',
+    japanese: '介護',
+    salary: '¥200,000 – ¥260,000/mo',
+    desc: 'Assisting daily living and healthcare for elderly residents in Japan. Tremendous demand with dedicated government subsidies and career bonuses.',
+    requirements: 'JLPT N4 or JFT-Basic + Nursing Care Skills & Japanese Test'
   },
   {
     id: 2,
-    slug: 'how-to-clear-jlpt-n5-in-3-months',
-    title: 'How to Clear JLPT N5 in 3 to 4 Months: Proven Strategy for Beginners',
-    excerpt: 'Master Hiragana, Katakana, basic 100 Kanji, and essential grammar patterns to confidently clear your JLPT N5 exam on your first attempt.',
-    category: 'Japanese Language',
-    readTime: '5 min read',
-    date: 'November 2026',
-    author: 'IndoJapan Academic Faculty',
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80',
-    tags: ['JLPT N5', 'Japanese Learning', 'Kanji', 'Courses'],
-    content: `The Japanese Language Proficiency Test (JLPT) Level N5 is the international benchmark for basic Japanese understanding and is widely considered the gateway qualification for Japanese language school enrollment and immigration assessment.
-
-### Phase 1: Mastering the Phonetic Scripts (Weeks 1 to 2)
-- Memorize **Hiragana** (46 basic characters) and **Katakana** (46 characters used for foreign loanwords).
-- Focus on stroke orders, dakuten, handakuten, and combined sounds (yōon).
-- Daily flashcard drills using spaced repetition.
-
-### Phase 2: Essential Grammar & Vocabulary (Weeks 3 to 8)
-- Complete Minna no Nihongo Lessons 1 through 25.
-- Learn elementary particles (Wa, Ga, O, Ni, De, E, Kara, Made).
-- Understand verb conjugations (Masu form, Te form, Nai form, Ta form).
-- Build a vocabulary bank of 800+ essential words.
-
-### Phase 3: Kanji Recognition & Listening Practice (Weeks 9 to 12)
-- Master approximately 100 essential Kanji characters (numbers, family, time, directions, basic verbs).
-- Listen to official JLPT audio exercises daily at natural Japanese speed.
-- Practice 3 to 5 full mock test papers under timed exam conditions.
-
-At IndoJapan Japanese Language School in Jalandhar, our intensive N5 classroom modules provide daily speaking practice, individualized feedback, and periodic mock examinations.`
+    title: 'Food Service & Restaurants',
+    japanese: '外食業',
+    salary: '¥190,000 – ¥250,000/mo',
+    desc: 'Customer service, food preparation, kitchen operations, and restaurant management across Japan’s world-renowned food and hospitality sector.',
+    requirements: 'JLPT N4 or JFT-Basic + Food Service Skill Test'
   },
   {
     id: 3,
-    slug: 'part-time-jobs-and-living-costs-japan',
-    title: 'Part-Time Jobs & Student Living Expenses in Japan (2027 Guide)',
-    excerpt: 'Realistic insights into part-time work permissions (28 hrs/week), hourly wages across Tokyo vs Osaka vs Fukuoka, and monthly student budgets.',
-    category: 'Student Life in Japan',
-    readTime: '6 min read',
-    date: 'October 2026',
-    author: 'NAVDEEP SINGH VIRK (Founder)',
-    image: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80',
-    tags: ['Student Life', 'Part-Time Jobs', 'Living Costs', 'Japan Guide'],
-    content: `One of the most appealing aspects of Japan for Indian students is the legal right to work part-time while enrolled as a full-time language student.
-
-### Legal Permission to Work (Shikakugai Katsudō Kyoka)
-Upon arrival at major international airports in Japan (Haneda, Narita, Kansai, Chubu), students with a valid Student Visa status receive a Residence Card (Zairyu Card). By submitting the permission form at immigration control, you receive the official stamp permitting up to **28 hours per week** of part-time employment during semesters, and up to **40 hours per week (8 hours/day)** during official school vacations.
-
-### Hourly Wages by Region
-- **Tokyo & Kanagawa:** ¥1,113 to ¥1,350+ per hour (night shifts offer an additional 25% allowance).
-- **Osaka & Kyoto:** ¥1,064 to ¥1,200+ per hour.
-- **Fukuoka & Regional Prefectures:** ¥950 to ¥1,100+ per hour (with significantly lower rent costs).
-
-### Monthly Living Costs Breakdown
-- **Dormitory / Shared Apartment Rent:** ¥30,000 to ¥55,000
-- **Food & Groceries:** ¥25,000 to ¥35,000
-- **Utilities & High-Speed Mobile Data:** ¥8,000 to ¥12,000
-- **National Health Insurance (NHI):** Approx. ¥1,500 to ¥2,500 (students receive subsidized premiums covering 70% of medical costs).
-- **Total Estimated Monthly Living Cost:** ¥70,000 to ¥105,000 (~40,000 to 60,000 INR).
-
-With steady part-time earnings ranging between ¥100,000 and ¥140,000 per month, disciplined students can comfortably manage their monthly living expenses while focusing on their language studies.`
+    title: 'Agriculture & Farming',
+    japanese: '農業',
+    salary: '¥180,000 – ¥230,000/mo',
+    desc: 'High-tech greenhouse cultivation, crop production, dairy management, and livestock farming utilizing modern Japanese automation.',
+    requirements: 'JLPT N4 or JFT-Basic + Agriculture Skill Test'
   },
   {
     id: 4,
-    slug: 'why-japan-is-top-choice-punjab-students',
-    title: 'Why Japan is Becoming the Top Destination for Students from Punjab',
-    excerpt: 'Exploring Japan as a high-security, high-income alternative offering fast permanent residency tracks and massive workforce demands.',
-    category: 'Study in Japan',
-    readTime: '4 min read',
-    date: 'October 2026',
-    author: 'IndoJapan Advisory Desk',
-    image: 'https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=800&q=80',
-    tags: ['Japan Careers', 'Why Japan', 'Punjab Students', 'Education'],
-    content: `In recent years, an increasing number of students and parents across Jalandhar, Ludhiana, and Punjab have turned their attention toward Japan. 
-
-### 1. Acute Demographic Demand for Skilled Youth
-Due to Japan's aging population and shrinking workforce, Japanese businesses, technology firms, and healthcare organizations are actively recruiting international talent. Students who complete language school and attain JLPT N2 or N1 have strong employment pathways.
-
-### 2. World-Class Safety & Respectful Culture
-Japan consistently ranks among the top 10 safest countries globally. Parents have peace of mind knowing that crime rates are exceptionally low, public transit is punctual to the second, and students are treated with hospitality and respect.
-
-### 3. Clear Transition from Study to Work Visa
-Unlike countries where work permits are uncertain, Japanese immigration provides straightforward transitions: Language School ➔ Specialized Vocational College (Senmon Gakko) or University ➔ Engineer/Specialist in Humanities/International Services Work Visa (Gijinkoku).`
+    title: 'Construction & Civil Works',
+    japanese: '建設業',
+    salary: '¥210,000 – ¥280,000/mo',
+    desc: 'Carpentry, electrical wiring, formwork, civil engineering, and infrastructure modernization across major Japanese metropolitan areas.',
+    requirements: 'JLPT N4 or JFT-Basic + Construction Skill Evaluation Test'
+  },
+  {
+    id: 5,
+    title: 'Building Cleaning Management',
+    japanese: 'ビルクリーニング',
+    salary: '¥180,000 – ¥230,000/mo',
+    desc: 'Professional commercial sanitation, environmental management for hospitals, international airports, hotels, and enterprise complexes.',
+    requirements: 'JLPT N4 or JFT-Basic + Building Cleaning Skill Test'
+  },
+  {
+    id: 6,
+    title: 'Food & Beverage Manufacturing',
+    japanese: '飲食料品製造業',
+    salary: '¥185,000 – ¥240,000/mo',
+    desc: 'Food processing, hygienic packaging, quality inspection, and production supervision in Japanese food factories and breweries.',
+    requirements: 'JLPT N4 or JFT-Basic + Food Manufacturing Skill Test'
+  },
+  {
+    id: 7,
+    title: 'Automobile Maintenance',
+    japanese: '自動車整備業',
+    salary: '¥200,000 – ¥270,000/mo',
+    desc: 'Automotive diagnostics, routine mechanical maintenance, periodic vehicle inspections (Shaken), and modern electric vehicle servicing.',
+    requirements: 'JLPT N4 or JFT-Basic + Automobile Maintenance Skill Test'
+  },
+  {
+    id: 8,
+    title: 'Hospitality & Accommodation',
+    japanese: '宿泊業',
+    salary: '¥190,000 – ¥240,000/mo',
+    desc: 'Front desk reception, customer hospitality (Omotenashi), concierge services, and hotel event management across Tokyo, Kyoto, and Osaka.',
+    requirements: 'JLPT N4 or JFT-Basic + Accommodation Industry Skill Test'
+  },
+  {
+    id: 9,
+    title: 'Industrial Machinery Manufacturing',
+    japanese: '産業機械製造業',
+    salary: '¥195,000 – ¥260,000/mo',
+    desc: 'Machining, casting, welding, metal pressing, and electronic assembly in advanced manufacturing facilities across Japan.',
+    requirements: 'JLPT N4 or JFT-Basic + Industrial Machinery Skill Test'
+  },
+  {
+    id: 10,
+    title: 'Machine Parts & Tooling',
+    japanese: '素形材産業',
+    salary: '¥190,000 – ¥250,000/mo',
+    desc: 'Precision die-casting, painting, electroplating, and metal finishing for Japanese engineering and consumer electronics corporations.',
+    requirements: 'JLPT N4 or JFT-Basic + Machine Parts Skill Test'
+  },
+  {
+    id: 11,
+    title: 'Shipbuilding & Marine Industry',
+    japanese: '造船・舶用工業',
+    salary: '¥200,000 – ¥270,000/mo',
+    desc: 'Welding, boiler assembly, hull fabrication, and ship engine maintenance at major Japanese maritime dockyards.',
+    requirements: 'JLPT N4 or JFT-Basic + Shipbuilding Skill Test'
+  },
+  {
+    id: 12,
+    title: 'Aviation Ground Handling',
+    japanese: '航空業',
+    salary: '¥200,000 – ¥260,000/mo',
+    desc: 'Airport baggage ramp handling, cargo sorting, aircraft towing, and cabin cleaning operations at major international airports across Japan.',
+    requirements: 'JLPT N4 or JFT-Basic + Aviation Skill Test'
   }
 ];
+
+// TITP (Technical Intern Training Program) Highlights
+export const titpHighlights = {
+  title: 'TITP (Technical Intern Training Program / 技能実習)',
+  subtitle: 'Government-Supported Practical Skill Transfer Program in Japan',
+  duration: '3 to 5 Years',
+  overview: 'TITP is a Japanese government program designed to transfer industrial skills, technology, and knowledge to young international trainees through practical on-the-job training in Japan.',
+  keyBenefits: [
+    'Earn competitive salary matching Japanese labor standards while learning advanced skills',
+    'Full health insurance, subsidized housing, and workplace safety guaranteed by Japanese law',
+    '3 to 5 years of structured vocational training in manufacturing, agriculture, or construction',
+    'Direct opportunity to transition smoothly to the SSW (Specified Skilled Worker) visa without taking skill tests upon completion of TITP 2 or 3',
+    'Return home with internationally recognized Japanese certifications and Japanese language competence'
+  ]
+};

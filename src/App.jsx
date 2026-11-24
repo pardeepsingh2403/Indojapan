@@ -6,8 +6,9 @@ import { FloatingActions } from './components/FloatingActions';
 import { Home } from './pages/Home';
 import { Courses } from './pages/Courses';
 import { About } from './pages/About';
-import { HowToApply } from './pages/HowToApply';
-import { Blog } from './pages/Blog';
+import { StudentVisa } from './pages/StudentVisa';
+import { WorkInJapan } from './pages/WorkInJapan';
+import { JobOpportunitiesInIndia } from './pages/JobOpportunitiesInIndia';
 import { SuccessGallery } from './pages/SuccessGallery';
 import { Contact } from './pages/Contact';
 
@@ -25,29 +26,42 @@ function App() {
             <Route path="/courses" element={<Courses />} />
             <Route path="/japanese-language" element={<Navigate to="/courses" replace />} />
 
-            {/* 3). About Us */}
+            {/* 3). Student Visa (Study in Japan) */}
+            <Route path="/student-visa" element={<StudentVisa />} />
+            <Route path="/study-in-japan" element={<StudentVisa />} />
+            <Route path="/japan-student-visa" element={<StudentVisa />} />
+            <Route path="/japan-intakes" element={<StudentVisa />} />
+
+            {/* 4). Work in Japan (SSW & TITP) */}
+            <Route path="/work-in-japan" element={<WorkInJapan />} />
+            <Route path="/ssw" element={<WorkInJapan />} />
+            <Route path="/titp" element={<WorkInJapan />} />
+
+            {/* 5). Job Opportunities in India (Japanese Companies) */}
+            <Route path="/job-opportunities-in-india" element={<JobOpportunitiesInIndia />} />
+            <Route path="/jobs-in-india" element={<JobOpportunitiesInIndia />} />
+            <Route path="/japanese-companies-in-india" element={<JobOpportunitiesInIndia />} />
+
+            {/* Legacy Admission Route Redirects to Student Visa */}
+            <Route path="/admission" element={<Navigate to="/student-visa" replace />} />
+            <Route path="/admission/how-to-apply" element={<Navigate to="/student-visa" replace />} />
+            <Route path="/how-to-apply" element={<Navigate to="/student-visa" replace />} />
+
+            {/* 6). About Us */}
             <Route path="/about" element={<About />} />
             <Route path="/about-us" element={<Navigate to="/about" replace />} />
 
-            {/* 4). Admission -> How to apply */}
-            <Route path="/admission" element={<HowToApply />} />
-            <Route path="/admission/how-to-apply" element={<HowToApply />} />
-            <Route path="/how-to-apply" element={<HowToApply />} />
-            <Route path="/study-in-japan" element={<Navigate to="/admission/how-to-apply" replace />} />
-            <Route path="/japan-student-visa" element={<Navigate to="/admission/how-to-apply" replace />} />
-            <Route path="/japan-intakes" element={<Navigate to="/admission/how-to-apply" replace />} />
-
-            {/* 5). Blog */}
-            <Route path="/blog" element={<Blog />} />
-
-            {/* 6). Gallery */}
+            {/* 7). Gallery */}
             <Route path="/gallery" element={<SuccessGallery />} />
             <Route path="/success-gallery" element={<Navigate to="/gallery" replace />} />
             <Route path="/success-stories" element={<Navigate to="/gallery" replace />} />
 
-            {/* 7). Contact Us */}
+            {/* 8). Contact Us */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/contact-us" element={<Navigate to="/contact" replace />} />
+
+            {/* Legacy Blog Redirect */}
+            <Route path="/blog" element={<Navigate to="/student-visa" replace />} />
 
             {/* Fallback */}
             <Route path="*" element={<Navigate to="/" replace />} />

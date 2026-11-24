@@ -2,11 +2,11 @@
 
 Official modern frontend web application for **IndoJapan Japanese Language School**, Jalandhar, Punjab, India.
 
-- **Founder & Director:** NAVDEEP SINGH VIRK
+- **Founder & Director:** NAVDEEP VIRK
 - **India Contact:** +91 94780 66275
 - **Japan Contact:** +81 80 3932 1993
 - **Official Domain:** [www.indojapanjalandhar.com](https://www.indojapanjalandhar.com)
-- **Head Office:** SCO 14, 2nd Floor, Civil Lines, Near BMC Chowk, Jalandhar, Punjab – 144001, India
+- **Head Office:** BMC CHOWK, Near Bus Stand, Jalandhar, Punjab – 144001, India
 
 ---
 

@@ -22,11 +22,11 @@ export const Navbar = () => {
   const navLinks = [
     { label: 'Home', path: '/' },
     { label: 'Courses', path: '/courses' },
+    { label: 'Jobs in India', path: '/jobs-in-india' },
+    { label: 'Student Visa', path: '/student-visa' },
+    { label: 'Work in Japan', path: '/work-in-japan' },
     { label: 'About Us', path: '/about' },
-    { label: 'Admission', path: '/admission' },
-    { label: 'Blog', path: '/blog' },
     { label: 'Gallery', path: '/gallery' },
-    { label: 'Contact Us', path: '/contact' },
   ];
 
   return (
@@ -45,22 +45,24 @@ export const Navbar = () => {
             </div>
 
             <div className="flex flex-col">
-              <span className="text-[13.5px] sm:text-base lg:text-[15.5px] xl:text-[17.5px] font-black tracking-tight text-slate-900 group-hover:text-red-600 transition-colors whitespace-nowrap">
+              <span className="text-base sm:text-lg lg:text-[17px] xl:text-[18.5px] font-black tracking-tight text-slate-900 group-hover:text-red-600 transition-colors whitespace-nowrap">
                 IndoJapan <span className="text-red-600">Japanese Language School</span>
               </span>
-              <span className="text-[9.5px] sm:text-[11px] font-semibold text-slate-500 tracking-wide whitespace-nowrap">
-                Jalandhar Punjab India Head Office
+              <span className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wide whitespace-nowrap flex items-center gap-1.5">
+                <span className="text-red-600 font-bold">インド日本学園</span>
+                <span className="text-slate-300">•</span>
+                <span>Jalandhar Head Office</span>
               </span>
             </div>
           </Link>
 
-          {/* 2. Desktop Navigation Links (Direct click button for all 7 sections) */}
-          <div className="hidden lg:flex items-center gap-1.5 xl:gap-3.5 2xl:gap-5 text-[13px] xl:text-[14px] 2xl:text-[15px] font-bold text-slate-800 shrink-0">
+          {/* 2. Desktop Navigation Links (Direct click button for core sections) */}
+          <div className="hidden lg:flex items-center gap-1.5 xl:gap-3 2xl:gap-4 text-[14px] xl:text-[15px] 2xl:text-[16px] font-bold text-slate-800 shrink-0">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-2 py-1.5 transition-colors whitespace-nowrap relative ${
+                className={`px-2 xl:px-3 py-1.5 transition-colors whitespace-nowrap relative ${
                   isActive(link.path)
                     ? 'text-red-600 font-black'
                     : 'text-slate-800 hover:text-red-600'
@@ -78,9 +80,9 @@ export const Navbar = () => {
           <div className="hidden lg:flex items-center shrink-0 ml-2 xl:ml-4">
             <Link
               to="/contact"
-              className="px-4 py-2.5 rounded-xl text-xs xl:text-sm font-black text-white bg-red-600 hover:bg-red-700 shadow-sm hover:shadow-md transition-all whitespace-nowrap flex items-center gap-1.5 group cursor-pointer"
+              className="px-5 py-2.5 rounded-xl text-sm xl:text-[15px] font-black text-white bg-red-600 hover:bg-red-700 shadow-sm hover:shadow-md transition-all whitespace-nowrap flex items-center gap-1.5 group cursor-pointer"
             >
-              <Phone className="w-3.5 h-3.5 text-white group-hover:rotate-12 transition-transform" />
+              <Phone className="w-4 h-4 text-white group-hover:rotate-12 transition-transform" />
               <span>Contact Us</span>
             </Link>
           </div>
@@ -111,7 +113,7 @@ export const Navbar = () => {
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-slate-100 space-y-2 bg-white">
             <div className="grid grid-cols-1 gap-1">
-              {navLinks.map((link, idx) => (
+              {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
@@ -122,7 +124,7 @@ export const Navbar = () => {
                       : 'text-slate-800 hover:bg-slate-50'
                   }`}
                 >
-                  <span>{idx + 1}). {link.label}</span>
+                  <span>{link.label}</span>
                   <ChevronRight className="w-4 h-4 text-slate-400" />
                 </Link>
               ))}
@@ -130,10 +132,10 @@ export const Navbar = () => {
               <Link
                 to="/contact"
                 onClick={() => setMobileMenuOpen(false)}
-                className="mt-2 px-4 py-3.5 rounded-xl text-base font-black bg-red-600 text-white flex items-center justify-between shadow-sm"
+                className="mt-2 px-4 py-3 rounded-xl text-base font-black bg-red-600 text-white flex items-center justify-between shadow-sm"
               >
-                <span>7). Contact Us (Office & Phone)</span>
-                <ChevronRight className="w-5 h-5 text-white/80" />
+                <span>Contact Us (Office & Phone)</span>
+                <ChevronRight className="w-4 h-4 text-white/80" />
               </Link>
             </div>
 
@@ -141,7 +143,7 @@ export const Navbar = () => {
             <div className="pt-3 border-t border-slate-100 mt-3 space-y-2 px-2">
               <div className="p-3.5 rounded-2xl bg-slate-900 text-white space-y-2">
                 <div className="flex items-center justify-between border-b border-slate-800 pb-2">
-                  <span className="text-[10px] text-slate-400 uppercase font-bold">Owner / Founder</span>
+                  <span className="text-[10px] text-slate-400 uppercase font-bold">Founder & CEO</span>
                   <span className="text-xs font-black text-red-400">{contactInfo.founder}</span>
                 </div>
                 
@@ -155,10 +157,12 @@ export const Navbar = () => {
                   </a>
 
                   <a
-                    href={`tel:${contactInfo.japanPhone.replace(/[\s+]/g, '')}`}
+                    href={contactInfo.japanWhatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center justify-between text-slate-200 hover:text-white"
                   >
-                    <span className="text-slate-400">Japan Contact:</span>
+                    <span className="text-slate-400">Japan (WhatsApp):</span>
                     <strong className="font-bold text-white">{contactInfo.japanPhone}</strong>
                   </a>
                 </div>
